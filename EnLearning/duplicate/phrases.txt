@@ -1,0 +1,113 @@
+data management
+training dataset
+domain composition
+task composition
+data quality control
+instruction dataset
+model performance
+scaling laws
+compute budget
+data exhaustion
+quality filtering
+toxicity filtering
+deduplication technique
+multitask fine-tuning
+instruction complexity
+instruction diversity
+data-efficient learning
+negative interference
+gradient similarity
+representation similarity
+power-law relationship
+optimal allocation
+temporal shift
+temporal misalignment
+human-aligned
+bias amplification
+emergent abilities
+downstream tasks
+self-supervised pretraining
+deliberately curated
+under-explored
+future directions
+synthetic data generation
+large language models (LLMs)
+prompt engineering
+few-shot prompting
+zero-shot generation
+retrieval-augmented generation (RAG)
+self-instruct method
+data scarcity
+low-resource settings
+task-relevant examples
+functional correctness
+execution feedback
+distributional realism
+distribution shift
+quality assurance
+post-generation filtering
+downstream task performance
+closed-loop generation
+model collapse
+self-reinforcement
+curriculum learning
+human-in-the-loop
+automated verification
+unit test
+code translation
+bug repair
+instruction-following models
+instruction tuning
+privacy preservation
+cost-effectiveness
+empirical validation
+statistical rigor
+domain-specific nuances
+open research directions
+ethical safeguards
+knowledge graph
+supervised fine-tuning
+question-answering
+atomic QA
+aggregated QA
+multi-hop QA
+expected calibration error
+knowledge blind spot
+long-tail knowledge
+neighborhood sampling
+subgraph sampler
+style-controlled generation
+factual inaccuracy
+knowledge-intensive task
+closed-book setting
+knowledge association
+structural constraint
+contextual coherence
+relational information
+QA pair
+high-value knowledge
+knowledge representation
+multi-hop reasoning
+source corpus
+KG triple
+data augmentation
+domain expertise
+labor-intensive
+high-frequency knowledge
+domain-specific information
+sentence template
+difficulty level
+generalization ability
+catastrophic forgetting
+Monte Carlo tree search
+chain-of-thought reasoning
+logical problem-solving
+KG-calibrated
+data synthesis framework
+baseline method
+experimental result
+comprehensive solution
+fine-grained knowledge graph
+targeted data augmentation
+diverse QA data
+knowledge graph-guided

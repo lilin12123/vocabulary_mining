@@ -31,7 +31,7 @@ generalization
 grammatical
 grounded
 hallucination
-heuristic (adj./n.)
+heuristic
 heterogeneous
 homogeneous
 idiosyncrasy

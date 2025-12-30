@@ -16,7 +16,7 @@
 | mitigate | /ˈmɪtɪɡeɪt/ | 缓解 | Techniques mitigate negative task interference. |
 | evoke | /ɪˈvoʊk/ | 激发 | SFT evokes instruction-following abilities. |
 | synthesis | /ˈsɪnθəsɪs/ | 合成（过程） | Data synthesis addresses scarcity issues. |
-| heuristic (adj./n.) | /hjuːˈrɪstɪk/ | 启发式的；经验法则 | Heuristic filters remove low-quality text. |
+| heuristic | /hjuːˈrɪstɪk/ | 启发式的；经验法则 | Heuristic filters remove low-quality text. |
 | perplexity | /pərˈpleksəti/ | 困惑度 | Lower perplexity often indicates higher fluency. |
 | memorization | /ˌmemərəˈzeɪʃn/ | 记忆（过拟合） | Deduplication reduces unwanted memorization. |
 | generalization | /ˌdʒenərələˈzeɪʃn/ | 泛化能力 | Over-filtering harms generalization. |
