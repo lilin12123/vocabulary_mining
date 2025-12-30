@@ -1,0 +1,8 @@
+Source:
+
+Coursera
+Stanford CS336 Language Modeling from Scratch | Spring 2025 |  
+
+Thesis
+Data Management For Training Large Language Models: A Survey
+SYNTHETIC DATA GENERATION USING LARGE LANGUAGE MODELS: ADVANCES IN TEXT AND CODE

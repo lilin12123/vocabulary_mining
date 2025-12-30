@@ -1,0 +1,68 @@
+automated verification
+bias amplification
+bug repair
+closed-loop generation
+code translation
+compute budget
+cost-effectiveness
+curriculum learning
+data-efficient learning
+data exhaustion
+data management
+data quality control
+data scarcity
+deduplication technique
+deliberately curated
+distribution shift
+distributional realism
+domain composition
+domain-specific nuances
+downstream task performance
+downstream tasks
+ethical safeguards
+empirical validation
+emergent abilities
+execution feedback
+few-shot prompting
+functional correctness
+future directions
+gradient similarity
+human-aligned
+human-in-the-loop
+instruction complexity
+instruction dataset
+instruction diversity
+instruction tuning
+instruction-following models
+large language models (LLMs)
+low-resource settings
+model collapse
+model performance
+multitask fine-tuning
+negative interference
+open research directions
+optimal allocation
+post-generation filtering
+power-law relationship
+privacy preservation
+prompt engineering
+quality assurance
+quality filtering
+representation similarity
+retrieval-augmented generation (RAG)
+scaling laws
+self-instruct method
+self-reinforcement
+self-supervised pretraining
+statistical rigor
+synthetic data generation
+task composition
+task-relevant examples
+temporal misalignment
+temporal shift
+toxicity filtering
+training dataset
+under-explored
+unit test
+zero-shot generation
+
