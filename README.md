@@ -14,7 +14,7 @@
 #### 使用示例
 
 EnLearning/prompts/prompt.py 其中有两个prompt用来生成markdown编码格式的表格。
-请用其中的两个prompt，分别帮我生成基于论文https://arxiv.org/pdf/2505.20416 的70个单词和50个短语
+请用其中的两个prompt，分别帮我生成基于论文https://arxiv.org/pdf/2505.20416 的70个单词和50个短语，并用一个readmd.txt来简述论文的内容
 
 ### 第二步：运行去重和合并脚本
 
