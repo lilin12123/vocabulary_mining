@@ -111,3 +111,52 @@ fine-grained knowledge graph
 targeted data augmentation
 diverse QA data
 knowledge graph-guided
+cost-performance trade-off
+cost budget
+token consumption
+inference latency
+computational cost
+end-to-end latency
+runtime cost
+step efficiency
+cost-of-pass
+Pareto frontier
+plan–act–observe loop
+memory–planning–tool learning cycle
+partially observable Markov decision process
+transition kernel
+reward function
+discount factor
+tool interface
+memory update rule
+working memory
+external memory
+memory construction
+memory management
+rule-based management
+LLM-based management
+hybrid management
+memory access
+memory selection
+memory integration
+hierarchical memory
+graph-based memory
+forgetting curve
+FIFO replacement
+retrieval noise
+vector similarity search
+tool selection
+tool calling
+tool-integrated reasoning
+in-place parameter filling
+parallel tool calling
+cost-aware tool calling
+tool-use penalty
+efficiency-aware rewards
+budget-constrained tool learning
+fast–slow thinking
+adaptive budgeting
+A* search
+task decomposition
+protocol compression
+topology sparsification

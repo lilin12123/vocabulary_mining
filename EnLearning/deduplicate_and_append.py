@@ -12,10 +12,52 @@ import sys
 from pathlib import Path
 
 
+_MD_TABLE_SEPARATOR_CELL_RE = re.compile(r"^:?-{3,}:?$")
+
+
+def _parse_first_column_from_md_table_row(line: str) -> str | None:
+    """
+    Parse the first column from a markdown table row.
+
+    Returns None when the line is not a data row, e.g.:
+    - not a table row (doesn't start with '|')
+    - header row (first cell is '英文' / 'English')
+    - separator/alignment row (cells are '---', ':---:', etc.)
+    """
+    s = line.strip()
+    if not s.startswith("|"):
+        return None
+
+    # Split row cells. Example:
+    # | word | phonetics | meaning | synonyms | example |
+    cells = [c.strip() for c in s.strip("|").split("|")]
+    if len(cells) < 2:
+        return None
+
+    first = cells[0].strip()
+    if not first:
+        return None
+
+    # Skip header rows
+    if first in {"英文", "English", "Word", "Phrase"}:
+        return None
+
+    # Skip separator/alignment rows
+    # e.g. |------|----| or |:----:|:---|
+    if all((_MD_TABLE_SEPARATOR_CELL_RE.fullmatch(c) is not None) for c in cells if c):
+        return None
+
+    # Sometimes the first cell itself is a separator
+    if _MD_TABLE_SEPARATOR_CELL_RE.fullmatch(first) is not None:
+        return None
+
+    return first
+
+
 def extract_items_from_markdown(markdown_file):
     """
-    从 markdown 表格中提取第一列（英文单词/短语）
-    提取第一个 | 和第二个 | 之间的内容
+    从 markdown 表格中提取第一列（英文单词/短语）。
+    支持文件中存在多段表格；会跳过表头和分隔线。
     
     Args:
         markdown_file: markdown 文件路径
@@ -28,25 +70,9 @@ def extract_items_from_markdown(markdown_file):
     with open(markdown_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
-    # 跳过表头和分隔线，从第5行开始（索引4）
-    for line in lines[4:]:
-        line_stripped = line.strip()
-        if not line_stripped or not line_stripped.startswith('|'):
-            continue
-        
-        # 提取第一个 | 和第二个 | 之间的内容
-        first_pipe = line_stripped.find('|')
-        if first_pipe == -1:
-            continue
-        
-        second_pipe = line_stripped.find('|', first_pipe + 1)
-        if second_pipe == -1:
-            continue
-        
-        # 提取第一个和第二个 | 之间的内容，去除两边空格
-        word_or_phrase = line_stripped[first_pipe + 1:second_pipe].strip()
-        
-        if word_or_phrase:  # 确保不是空字符串
+    for line in lines:
+        word_or_phrase = _parse_first_column_from_md_table_row(line)
+        if word_or_phrase:
             items.append(word_or_phrase)
     
     return items
@@ -54,55 +80,29 @@ def extract_items_from_markdown(markdown_file):
 
 def read_markdown_lines(markdown_file):
     """
-    读取 markdown 文件的所有行，并标记数据行
-    提取第一个 | 和第二个 | 之间的内容作为单词/短语
+    读取 markdown 文件的所有行，并标记表格数据行（用于后续删除重复项）。
+    支持文件中存在多段表格；会跳过表头和分隔线。
     
     Args:
         markdown_file: markdown 文件路径
         
     Returns:
-        tuple: (header_lines, data_lines) - header_lines是表头，data_lines是数据行列表，每个元素是(word_or_phrase, original_line)或original_line
+        list: 行列表；表格数据行以 (word_or_phrase, original_line) 表示，其它行保持 original_line 字符串
     """
     with open(markdown_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
-    # 保留表头和分隔线（前4行）
-    header_lines = lines[:4]
     data_lines = []
     
-    # 跳过表头和分隔线，从第5行开始（索引4）
-    for line in lines[4:]:
+    for line in lines:
         original_line = line
-        line_stripped = line.strip()
-        
-        # 如果不是表格行，直接保留
-        if not line_stripped or not line_stripped.startswith('|'):
-            data_lines.append(original_line)
-            continue
-        
-        # 提取第一个 | 和第二个 | 之间的内容
-        # 例如：| word | phonetics | ... |
-        # 找到第一个 | 的位置
-        first_pipe = line_stripped.find('|')
-        if first_pipe == -1:
-            data_lines.append(original_line)
-            continue
-        
-        # 找到第二个 | 的位置（从第一个 | 之后开始找）
-        second_pipe = line_stripped.find('|', first_pipe + 1)
-        if second_pipe == -1:
-            data_lines.append(original_line)
-            continue
-        
-        # 提取第一个和第二个 | 之间的内容，去除两边空格
-        word_or_phrase = line_stripped[first_pipe + 1:second_pipe].strip()
-        
-        if word_or_phrase:  # 确保不是空字符串
+        word_or_phrase = _parse_first_column_from_md_table_row(original_line)
+        if word_or_phrase:
             data_lines.append((word_or_phrase, original_line))
         else:
             data_lines.append(original_line)
     
-    return header_lines, data_lines
+    return data_lines
 
 
 def read_existing_items(txt_file):
@@ -158,16 +158,13 @@ def remove_duplicates_from_markdown(markdown_file, existing_items_set, item_type
         existing_items_set: 现有单词/短语的集合
         item_type: 类型描述（用于日志输出）
     """
-    header_lines, data_lines = read_markdown_lines(markdown_file)
+    data_lines = read_markdown_lines(markdown_file)
     
     # 统计重复的行
     duplicate_count = 0
     new_lines = []
     
-    # 保留表头
-    new_lines.extend(header_lines)
-    
-    # 处理数据行
+    # 处理所有行（含多段表格）
     for line_data in data_lines:
         if isinstance(line_data, tuple):
             # 这是一个数据行
