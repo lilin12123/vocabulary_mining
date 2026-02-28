@@ -160,3 +160,53 @@ A* search
 task decomposition
 protocol compression
 topology sparsification
+英文短语
+transformer architecture
+encoder-decoder architecture
+attention mechanism
+multi-head self-attention
+fully connected layer
+pre-training phase
+post-training methodology
+reinforcement learning with verifiable rewards
+parameter-efficient fine-tuning
+iterative generate-grade loop
+power law relationship
+inference-time scaling
+compute-optimal inference
+reasoning budgets
+held-out prediction accuracy
+open-source LLMs
+closed-source models
+model weights
+ecosystem readiness
+tool use capability
+tool calling interface
+outsourcing computation
+autonomous agents
+industrialization of software
+AI race dynamics
+economically valuable tasks
+digital economic work
+business model sustainability
+massive subsidization
+GPU compute clusters
+CUDA ecosystem
+AI compute allocation
+inference optimization
+artificial general intelligence
+frontier models
+jagged intelligence profile
+automated software engineer
+long context processing
+hidden thoughts generation
+architectural innovation
+paradigm shift
+low-hanging fruit
+research discourse influence
+verifiable correctness
+cross-domain generalization
+model performance benchmarking
+strategic acquisition landscape
+remote worker automation
+system design focus

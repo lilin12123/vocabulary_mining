@@ -2,7 +2,66 @@
 
 一个用于从论文中提取英语单词和短语，并进行去重管理的工具集。
 
-## 快速开始
+## 快速开始（脚本一键生成）
+
+### 1. 复制并填写配置文件
+
+```bash
+cp /Users/lilin/develop/workspace/cursor/vocabulary_mining/EnLearning/config.env.example /Users/lilin/develop/workspace/cursor/vocabulary_mining/EnLearning/config.env
+```
+
+在 `EnLearning/config.env` 中填写：
+- `INPUT_FILE` 或 `INPUT_URL`
+- `OUTPUT_DIR`
+- `DASHSCOPE_API_KEY`
+说明：
+- `INPUT_URL` 会交给百炼网页检索/阅读工具处理（非本地抓取），通过 Responses API 调用 `web_search` / `web_extractor` 工具。citeturn0search1turn0search8
+- 网页工具在 Responses API 中仅支持中国内地地域，请在配置中设置 `REGION=CN`。citeturn0search1
+- 若使用 `qwen3-max-2026-01-23`，需要开启 `ENABLE_THINKING=1`；官方示例也推荐启用 `web_search`/`web_extractor`/`code_interpreter` 组合。citeturn0search1turn0search8
+
+### 2. 一键运行
+
+```bash
+chmod +x /Users/lilin/develop/workspace/cursor/vocabulary_mining/EnLearning/run_generate.sh
+/Users/lilin/develop/workspace/cursor/vocabulary_mining/EnLearning/run_generate.sh
+```
+
+脚本会自动创建虚拟环境、安装依赖，生成 `words.md` / `phrases.md`，并自动去重。
+
+---
+
+## 旧版 UI（可选）
+
+### 1. 安装依赖
+
+```bash
+cd /Users/lilin/develop/workspace/cursor/vocabulary_mining/EnLearning
+pip install -r requirements.txt
+```
+
+### 2. 设置百炼 API Key
+
+```bash
+export DASHSCOPE_API_KEY="你的Key"
+```
+
+### 3. 启动 UI
+
+```bash
+python /Users/lilin/develop/workspace/cursor/vocabulary_mining/EnLearning/ui/app.py
+```
+
+打开浏览器访问：
+
+```
+http://127.0.0.1:7860
+```
+
+在页面中粘贴原材料或输入 URL，编辑 prompt，点击生成即可自动写入 `EnLearning/YYYYMMDD/words.md` 和 `phrases.md`，并自动去重合并。
+
+---
+
+## 传统流程（CLI）
 
 ### 第一步：使用 Prompt 生成 Markdown 表格
 
