@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnLearning · Vocab RPG</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="hero">
+    <div>
+      <p class="kicker">Vocab RPG</p>
+      <h1>用战棋节奏背单词</h1>
+      <p class="sub">预览词表 → 地图推进 → 例句选义。10 题一关，3 点生命。</p>
+    </div>
+    <div class="hero-card">
+      <div class="stat">
+        <span>关卡题数</span>
+        <strong>10</strong>
+      </div>
+      <div class="stat">
+        <span>初始生命</span>
+        <strong>3</strong>
+      </div>
+      <div class="stat">
+        <span>道具</span>
+        <strong>3类</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel" id="auth-panel">
+      <div class="panel-title">
+        <h2>账号</h2>
+        <p>注册/登录后可查看自己的历史记录。</p>
+      </div>
+      <div class="form-row auth-row">
+        <input id="username-input" type="text" placeholder="用户名" />
+        <input id="password-input" type="password" placeholder="密码" />
+        <button id="register-btn" class="primary">注册</button>
+        <button id="login-btn" class="primary">登录</button>
+        <span id="login-status" class="muted">未登录</span>
+      </div>
+    </section>
+
+    <section class="panel" id="home-panel">
+      <div class="panel-title">
+        <h2>选择词库</h2>
+        <p>从本地 `YYYYMMDD/words.md` 载入词库。</p>
+      </div>
+      <div class="form-row">
+        <label for="book-select">词库文件</label>
+        <select id="book-select"></select>
+        <label for="difficulty-select">难度</label>
+        <select id="difficulty-select">
+          <option value="easy">初级（10）</option>
+          <option value="medium">中级（20）</option>
+          <option value="hard">高级（30）</option>
+        </select>
+        <button id="start-btn" class="primary">开始关卡</button>
+        <button id="view-book-btn" class="primary">查看词库</button>
+      </div>
+      <div class="tips">
+        <p>提示：开始关卡会预生成本关题目并缓存，加载时间取决于 LLM 配置。</p>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="preview-panel">
+      <div class="panel-title">
+        <h2>词表预览</h2>
+        <p>进入关卡前快速熟悉本关词汇。</p>
+      </div>
+      <div id="preview-list" class="preview-list"></div>
+      <div class="panel-actions">
+        <button id="enter-map-btn" class="primary">进入地图</button>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="game-panel">
+      <div class="panel-title">
+        <h2>地图推进</h2>
+        <p>每前进一步触发一道题。答错扣血，归零失败。</p>
+      </div>
+      <div class="game-layout">
+        <div class="map-card">
+          <div class="map-header">
+            <div class="stat-pill">步数 <span id="step-count">0</span>/<span id="step-total">10</span></div>
+            <div class="stat-pill">生命 <span id="hp-count">3</span></div>
+            <div class="stat-pill">连击 <span id="combo-count">0</span></div>
+          </div>
+          <div id="map-grid" class="map-grid"></div>
+          <div class="legend">
+            <span class="legend-item normal">普通</span>
+            <span class="legend-item treasure">宝箱</span>
+            <span class="legend-item trap">陷阱</span>
+            <span class="legend-item elite">精英</span>
+            <span class="legend-item heal">治疗</span>
+          </div>
+          <button id="move-btn" class="primary">随机前进</button>
+        </div>
+
+        <div class="question-card">
+          <div class="question-header">
+            <div>
+              <h3 id="word-title">—</h3>
+              <span id="word-phonetic" class="phonetic">—</span>
+            </div>
+            <div class="pos-hint">
+              词性提示：<span id="pos-hint">—</span>
+            </div>
+          </div>
+          <div id="sentence-list" class="sentence-list"></div>
+          <div id="options" class="options"></div>
+          <div id="feedback" class="feedback"></div>
+          <div class="items">
+            <button class="item-btn" id="item-eliminate">移除干扰项 (<span>0</span>)</button>
+            <button class="item-btn" id="item-heal">生命 +1 (<span>0</span>)</button>
+            <button class="item-btn" id="item-pos">词性提示 (<span>0</span>)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="result-panel">
+      <div class="panel-title">
+        <h2>关卡结算</h2>
+        <p id="result-sub">—</p>
+      </div>
+      <div class="result-grid">
+        <div class="result-item">
+          <span>得分</span>
+          <strong id="score-result">0</strong>
+        </div>
+        <div class="result-item">
+          <span>准确率</span>
+          <strong id="accuracy-result">0%</strong>
+        </div>
+        <div class="result-item">
+          <span>最高连击</span>
+          <strong id="max-combo-result">0</strong>
+        </div>
+        <div class="result-item">
+          <span>剩余 HP</span>
+          <strong id="hp-result">0</strong>
+        </div>
+      </div>
+      <div class="panel-actions">
+        <button id="restart-btn" class="primary">再来一局</button>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="history-panel">
+      <div class="panel-title">
+        <h2>历史记录</h2>
+        <p>仅展示当前登录账号的最近记录。</p>
+      </div>
+      <div id="history-list" class="history-list"></div>
+    </section>
+
+    <section class="panel" id="leaderboard-panel">
+      <div class="panel-title">
+        <h2>排行榜</h2>
+        <p>按分数排序的前 10 名。</p>
+      </div>
+      <div id="leaderboard-list" class="history-list"></div>
+    </section>
+
+    <section class="panel" id="stats-panel">
+      <div class="panel-title">
+        <h2>总统计</h2>
+        <p>全站与个人的关键数据。</p>
+      </div>
+      <div id="stats-list" class="history-list"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/static/game.js"></script>
+</body>
+</html>

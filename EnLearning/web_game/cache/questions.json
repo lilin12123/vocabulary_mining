@@ -1,0 +1,797 @@
+{
+  "adversarial|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Adversarial filtering improves realism.",
+      "Adversarial is frequently used in academic discussions.",
+      "Many reports highlight the role of adversarial in modern systems."
+    ],
+    "wrong_meanings": [
+      "鲁棒性",
+      "遵循指令能力"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988655"
+  },
+  "regularization|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Dropout is a form of regularization.",
+      "Regularization is frequently used in academic discussions.",
+      "Many reports highlight the role of regularization in modern systems."
+    ],
+    "wrong_meanings": [
+      "困惑度",
+      "涌现的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988690"
+  },
+  "perplexity|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Lower perplexity often indicates higher fluency.",
+      "Perplexity is frequently used in academic discussions.",
+      "Many reports highlight the role of perplexity in modern systems."
+    ],
+    "wrong_meanings": [
+      "真实性；准确性",
+      "细粒度的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988705"
+  },
+  "veracity|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "The veracity of synthetic clinical notes must be verified.",
+      "Veracity is frequently used in academic discussions.",
+      "Many reports highlight the role of veracity in modern systems."
+    ],
+    "wrong_meanings": [
+      "连贯性",
+      "正则化"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988723"
+  },
+  "fine-grained|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Fine-grained data ordering boosts performance.",
+      "Fine-grained is frequently used in academic discussions.",
+      "Many reports highlight the role of fine-grained in modern systems."
+    ],
+    "wrong_meanings": [
+      "鲁棒性",
+      "对抗性的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988738"
+  },
+  "robustness|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Diversity improves model robustness.",
+      "Robustness is frequently used in academic discussions.",
+      "Many reports highlight the role of robustness in modern systems."
+    ],
+    "wrong_meanings": [
+      "对抗性的",
+      "遵循指令能力"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988761"
+  },
+  "instruction-following|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "This ability is critical for chatbots.",
+      "Instruction-following is frequently used in academic discussions.",
+      "Many reports highlight the role of instruction-following in modern systems."
+    ],
+    "wrong_meanings": [
+      "鲁棒性",
+      "正则化"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988777"
+  },
+  "emergent|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "LLMs show emergent reasoning skills.",
+      "Emergent is frequently used in academic discussions.",
+      "Many reports highlight the role of emergent in modern systems."
+    ],
+    "wrong_meanings": [
+      "遵循指令能力",
+      "正则化"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988790"
+  },
+  "coherence|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Generated dialogues must maintain multi-turn coherence.",
+      "Coherence is frequently used in academic discussions.",
+      "Many reports highlight the role of coherence in modern systems."
+    ],
+    "wrong_meanings": [
+      "正则化",
+      "鲁棒性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988804"
+  },
+  "memorization|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Deduplication reduces unwanted memorization.",
+      "Memorization is frequently used in academic discussions.",
+      "Many reports highlight the role of memorization in modern systems."
+    ],
+    "wrong_meanings": [
+      "鲁棒性",
+      "细粒度的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:50:39.988818"
+  },
+  "mitigate|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Techniques mitigate negative task interference.",
+      "Mitigate is frequently used in academic discussions.",
+      "Many reports highlight the role of mitigate in modern systems."
+    ],
+    "wrong_meanings": [
+      "激发",
+      "合成（过程）"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993694"
+  },
+  "progressively|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Learn progressively from easy to hard.",
+      "Progressively is frequently used in academic discussions.",
+      "Many reports highlight the role of progressively in modern systems."
+    ],
+    "wrong_meanings": [
+      "对数线性的",
+      "连贯性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993729"
+  },
+  "synthesis|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Data synthesis addresses scarcity issues.",
+      "Synthesis is frequently used in academic discussions.",
+      "Many reports highlight the role of synthesis in modern systems."
+    ],
+    "wrong_meanings": [
+      "缓解",
+      "连贯性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993751"
+  },
+  "log-linear|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "A log-linear relation exists for math tasks.",
+      "Log-linear is frequently used in academic discussions.",
+      "Many reports highlight the role of log-linear in modern systems."
+    ],
+    "wrong_meanings": [
+      "迭代的",
+      "真实感；现实性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993768"
+  },
+  "benchmark|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "HumanEval is a standard benchmark for code generation.",
+      "Benchmark is frequently used in academic discussions.",
+      "Many reports highlight the role of benchmark in modern systems."
+    ],
+    "wrong_meanings": [
+      "迭代的",
+      "对数线性的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993784"
+  },
+  "iterative|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Iterative self-refinement improves dataset coherence.",
+      "Iterative is frequently used in academic discussions.",
+      "Many reports highlight the role of iterative in modern systems."
+    ],
+    "wrong_meanings": [
+      "逐步地",
+      "连贯性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993799"
+  },
+  "evoke|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "SFT evokes instruction-following abilities.",
+      "Evoke is frequently used in academic discussions.",
+      "Many reports highlight the role of evoke in modern systems."
+    ],
+    "wrong_meanings": [
+      "连贯性",
+      "逐步地"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993815"
+  },
+  "homogeneous|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Homogeneous data may limit generalization.",
+      "Homogeneous is frequently used in academic discussions.",
+      "Many reports highlight the role of homogeneous in modern systems."
+    ],
+    "wrong_meanings": [
+      "逐步地",
+      "基准测试"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993839"
+  },
+  "realism|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "The realism of synthetic code affects downstream performance.",
+      "Realism is frequently used in academic discussions.",
+      "Many reports highlight the role of realism in modern systems."
+    ],
+    "wrong_meanings": [
+      "逐步地",
+      "合成（过程）"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:40.993862"
+  },
+  "compiler|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Compilers detect syntax errors in generated code.",
+      "Compiler is frequently used in academic discussions.",
+      "Many reports highlight the role of compiler in modern systems."
+    ],
+    "wrong_meanings": [
+      "遵循指令能力",
+      "对抗性的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:45.580373"
+  },
+  "fine-tuning|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Supervised fine-tuning enhances instruction-following ability.",
+      "Fine-tuning is frequently used in academic discussions.",
+      "Many reports highlight the role of fine-tuning in modern systems."
+    ],
+    "wrong_meanings": [
+      "遵循指令能力",
+      "迭代的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:45.580413"
+  },
+  "monolingual|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Not all Americans are monolingual of course.",
+      "Monolingual is frequently used in academic discussions.",
+      "Many reports highlight the role of monolingual in modern systems."
+    ],
+    "wrong_meanings": [
+      "幻觉（模型生成虚假内容）",
+      "遵循指令能力"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:45.580430"
+  },
+  "autonomous|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Future systems should be autonomous.",
+      "Autonomous is frequently used in academic discussions.",
+      "Many reports highlight the role of autonomous in modern systems."
+    ],
+    "wrong_meanings": [
+      "迭代的",
+      "幻觉（模型生成虚假内容）"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:45.580459"
+  },
+  "hallucination|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "LLMs are prone to hallucination when generating facts.",
+      "Hallucination is frequently used in academic discussions.",
+      "Many reports highlight the role of hallucination in modern systems."
+    ],
+    "wrong_meanings": [
+      "编译器",
+      "单语的；仅用一种语言的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:45.580488"
+  },
+  "grammatical|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Native speakers can distinguish between grammatical and ungrammatical sentences even when they have never heard particular combinations before.",
+      "Grammatical is frequently used in academic discussions.",
+      "Many reports highlight the role of grammatical in modern systems."
+    ],
+    "wrong_meanings": [
+      "语义的",
+      "偏见"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:47.984865"
+  },
+  "detoxify|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Detoxifying training data improves safety.",
+      "Detoxify is frequently used in academic discussions.",
+      "Many reports highlight the role of detoxify in modern systems."
+    ],
+    "wrong_meanings": [
+      "乘性的",
+      "真实感；现实性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:47.984900"
+  },
+  "multiplicative|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Power-based multiplicative scaling law.",
+      "Multiplicative is frequently used in academic discussions.",
+      "Many reports highlight the role of multiplicative in modern systems."
+    ],
+    "wrong_meanings": [
+      "激发",
+      "偏见"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:47.984915"
+  },
+  "semantic|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Semantic deduplication removes near-duplicates.",
+      "Semantic is frequently used in academic discussions.",
+      "Many reports highlight the role of semantic in modern systems."
+    ],
+    "wrong_meanings": [
+      "真实感；现实性",
+      "激发"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:47.984933"
+  },
+  "bias|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Social bias in corpora affects model behavior.",
+      "Bias is frequently used in academic discussions.",
+      "Many reports highlight the role of bias in modern systems."
+    ],
+    "wrong_meanings": [
+      "缓解；减轻",
+      "单语的；仅用一种语言的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:47.984952"
+  },
+  "mitigation|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Filtering is a common mitigation strategy.",
+      "Mitigation is frequently used in academic discussions.",
+      "Many reports highlight the role of mitigation in modern systems."
+    ],
+    "wrong_meanings": [
+      "偏见",
+      "真实感；现实性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:47.984966"
+  },
+  "taxonomy|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Figure 3 shows the full taxonomy.",
+      "Taxonomy is frequently used in academic discussions.",
+      "Many reports highlight the role of taxonomy in modern systems."
+    ],
+    "wrong_meanings": [
+      "可控性",
+      "语法的，和语法有关的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:55.424417"
+  },
+  "debias|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "We must debias datasets to ensure fairness.",
+      "Debias is frequently used in academic discussions.",
+      "Many reports highlight the role of debias in modern systems."
+    ],
+    "wrong_meanings": [
+      "验证",
+      "鲁棒性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:55.424455"
+  },
+  "validation|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Human validation complements automated checks.",
+      "Validation is frequently used in academic discussions.",
+      "Many reports highlight the role of validation in modern systems."
+    ],
+    "wrong_meanings": [
+      "去偏见",
+      "语法的，和语法有关的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:55.424474"
+  },
+  "transpiler|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "LLMs generate parallel data for transpiler training.",
+      "Transpiler is frequently used in academic discussions.",
+      "Many reports highlight the role of transpiler in modern systems."
+    ],
+    "wrong_meanings": [
+      "分类体系",
+      "语法的，和语法有关的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:55.424496"
+  },
+  "grounded|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Retrieval-augmented generation produces more grounded outputs.",
+      "Grounded is frequently used in academic discussions.",
+      "Many reports highlight the role of grounded in modern systems."
+    ],
+    "wrong_meanings": [
+      "可控性",
+      "验证"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:55.424514"
+  },
+  "anonymization|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Synthetic data enables privacy-preserving anonymization.",
+      "Anonymization is frequently used in academic discussions.",
+      "Many reports highlight the role of anonymization in modern systems."
+    ],
+    "wrong_meanings": [
+      "验证",
+      "可控性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:55.424530"
+  },
+  "faithfulness|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Faithfulness metrics assess hallucination risk.",
+      "Faithfulness is frequently used in academic discussions.",
+      "Many reports highlight the role of faithfulness in modern systems."
+    ],
+    "wrong_meanings": [
+      "有依据的；基于事实的",
+      "匿名化"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:55.424545"
+  },
+  "controllability|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Controllability allows targeting rare phenomena.",
+      "Controllability is frequently used in academic discussions.",
+      "Many reports highlight the role of controllability in modern systems."
+    ],
+    "wrong_meanings": [
+      "语法的，和语法有关的",
+      "有依据的；基于事实的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T07:52:55.424561"
+  },
+  "data management|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Efficient data management boosts performance.",
+      "Data management is frequently used in academic discussions.",
+      "Many reports highlight the role of data management in modern systems."
+    ],
+    "wrong_meanings": [
+      "事实准确性",
+      "对齐（人类意图）"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562548"
+  },
+  "domain composition|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Domain composition affects reasoning ability.",
+      "Domain composition is frequently used in academic discussions.",
+      "Many reports highlight the role of domain composition in modern systems."
+    ],
+    "wrong_meanings": [
+      "对齐（人类意图）",
+      "对抗性的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562570"
+  },
+  "degradation|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Multi-epoch training causes degradation.",
+      "Degradation is frequently used in academic discussions.",
+      "Many reports highlight the role of degradation in modern systems."
+    ],
+    "wrong_meanings": [
+      "对齐（人类意图）",
+      "启发式的；经验法则"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562578"
+  },
+  "heuristic|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Heuristic filters remove low-quality text.",
+      "Heuristic is frequently used in academic discussions.",
+      "Many reports highlight the role of heuristic in modern systems."
+    ],
+    "wrong_meanings": [
+      "筛选过程、策展行为",
+      "少样本提示"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562587"
+  },
+  "factuality|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Evaluating factuality remains a key challenge in synthetic QA.",
+      "Factuality is frequently used in academic discussions.",
+      "Many reports highlight the role of factuality in modern systems."
+    ],
+    "wrong_meanings": [
+      "缓解；减轻",
+      "可控性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562594"
+  },
+  "nuanced|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Larger models produce more nuanced outputs.",
+      "Nuanced is frequently used in academic discussions.",
+      "Many reports highlight the role of nuanced in modern systems."
+    ],
+    "wrong_meanings": [
+      "领域构成",
+      "启发式的；经验法则"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562601"
+  },
+  "empirical validation|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Requires ablation studies and benchmarks.",
+      "Empirical validation is frequently used in academic discussions.",
+      "Many reports highlight the role of empirical validation in modern systems."
+    ],
+    "wrong_meanings": [
+      "分类体系",
+      "对抗性的"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562609"
+  },
+  "instruction diversity|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Diversity prevents overfitting to formats.",
+      "Instruction diversity is frequently used in academic discussions.",
+      "Many reports highlight the role of instruction diversity in modern systems."
+    ],
+    "wrong_meanings": [
+      "分类体系",
+      "性能下降"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562615"
+  },
+  "few-shot prompting|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Few-shot prompting yields task-specific examples.",
+      "Few-shot prompting is frequently used in academic discussions.",
+      "Many reports highlight the role of few-shot prompting in modern systems."
+    ],
+    "wrong_meanings": [
+      "分类体系",
+      "事实准确性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562621"
+  },
+  "task-relevant examples|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "LLMs produce artificial but task-relevant examples.",
+      "Task-relevant examples is frequently used in academic discussions.",
+      "Many reports highlight the role of task-relevant examples in modern systems."
+    ],
+    "wrong_meanings": [
+      "启发式的；经验法则",
+      "训练数据集"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562629"
+  },
+  "alignment|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "SFT improves alignment with human expectations.",
+      "Alignment is frequently used in academic discussions.",
+      "Many reports highlight the role of alignment in modern systems."
+    ],
+    "wrong_meanings": [
+      "事实准确性",
+      "匿名化"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562635"
+  },
+  "statistical rigor|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Future work demands statistical rigor.",
+      "Statistical rigor is frequently used in academic discussions.",
+      "Many reports highlight the role of statistical rigor in modern systems."
+    ],
+    "wrong_meanings": [
+      "指令多样性",
+      "事实准确性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562641"
+  },
+  "data exhaustion|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Data exhaustion drives synthesis research.",
+      "Data exhaustion is frequently used in academic discussions.",
+      "Many reports highlight the role of data exhaustion in modern systems."
+    ],
+    "wrong_meanings": [
+      "分类体系",
+      "指令多样性"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562650"
+  },
+  "curation|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Data curation is vital for effective SFT.",
+      "Curation is frequently used in academic discussions.",
+      "Many reports highlight the role of curation in modern systems."
+    ],
+    "wrong_meanings": [
+      "事实准确性",
+      "匿名化"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562902"
+  },
+  "training dataset|qwen-plus|f4da093c108bbec08d360ac2ec1eebf0d395a7e2": {
+    "pos": "unknown",
+    "sentences": [
+      "Construct a well-suited training dataset.",
+      "Training dataset is frequently used in academic discussions.",
+      "Many reports highlight the role of training dataset in modern systems."
+    ],
+    "wrong_meanings": [
+      "可控性",
+      "性能下降"
+    ],
+    "model": "qwen-plus",
+    "prompt_hash": "f4da093c108bbec08d360ac2ec1eebf0d395a7e2",
+    "updated_at": "2026-03-10T08:18:42.562911"
+  }
+}
